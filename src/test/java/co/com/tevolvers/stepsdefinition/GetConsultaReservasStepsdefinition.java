@@ -1,7 +1,7 @@
 package co.com.tevolvers.stepsdefinition;
 
 import co.com.tevolvers.questions.GetReservaQuestion;
-import co.com.tevolvers.task.Call;
+import co.com.tevolvers.task.get.Call;
 import co.com.tevolvers.utils.Uri;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;

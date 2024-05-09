@@ -1,4 +1,4 @@
-package co.com.tevolvers.task;
+package co.com.tevolvers.task.get;
 
 import co.com.tevolvers.interactions.GetConsultaReserva;
 import net.serenitybdd.screenplay.Performable;
