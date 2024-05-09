@@ -4,7 +4,7 @@ package co.com.tevolvers.utils;
 public enum Uri {
     LIST_RESERVA("/booking"),
     CREATE_RESERVA("/auth"),
-    UPDATE_RESERVA("/booking/:id");
+    UPDATE_RESERVA("/booking/1");
 
 
 
