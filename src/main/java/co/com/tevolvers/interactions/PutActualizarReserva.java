@@ -55,6 +55,8 @@ public class PutActualizarReserva implements Interaction {
 
                                 .contentType(typeContent)
                                 .body(bodyRequest)
+                                .header("Cookie","token=<token_value>")
+                                .header("Authorization","Basic YWRtaW46cGFzc3dvcmQxMjM=")
                                 .relaxedHTTPSValidation())
 
         );

@@ -54,6 +54,6 @@ public class PostCrearReservaStepsdefinition {
     }
     @Entonces("valida los datos consultados")
     public void valida_los_datos_consultados() {
-        theActorInTheSpotlight().should(seeThat(PostCrearReservaQuestion.registerSuccess(SC_CREATED)));
+        theActorInTheSpotlight().should(seeThat(PostCrearReservaQuestion.registerSuccess(SC_OK)));
     }
 }

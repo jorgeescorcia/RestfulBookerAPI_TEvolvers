@@ -22,13 +22,13 @@ public class PostCrearReservaQuestion implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         actor.should(seeThatResponse(RESPONSE_REQUEST,
                 reponse -> reponse.statusCode(statusOK)
-                        .body("firstname", equalTo("Jim"))
-                        .body("lastname", equalTo("Brown"))
-                        .body("totalprice", equalTo(111))
-                        .body("depositpaid", equalTo(true))
-                        .body("bookingdates.checkin", equalTo("2018-01-01"))
-                        .body("bookingdates.checkout", equalTo("2019-01-01"))
-                        .body("additionalneeds", equalTo("Breakfast"))
+                        .body("booking.firstname", equalTo("Jim"))
+                        .body("booking.lastname", equalTo("Brown"))
+                        .body("booking.totalprice", equalTo(111))
+                        .body("booking.depositpaid", equalTo(true))
+                        .body("booking.bookingdates.checkin", equalTo("2018-01-01"))
+                        .body("booking.bookingdates.checkout", equalTo("2019-01-01"))
+                        .body("booking.additionalneeds", equalTo("Breakfast"))
 
             )
         );
