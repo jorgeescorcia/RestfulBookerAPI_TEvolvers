@@ -21,6 +21,7 @@ public class PutActualizarReservaQuestion implements Question<Boolean> {
         actor.should(seeThatResponse(
                 RESPONSE_REQUEST,
                 response -> response.statusCode(statusOK)
+                        .header("Authorization", "Basic YWRtaW46cGFzc3dvcmQxMjM=")
                         .header("Cookie", "token=abc123")
                         .body("firstname", equalTo("James"))
                         .body("lastname", equalTo("Brown"))

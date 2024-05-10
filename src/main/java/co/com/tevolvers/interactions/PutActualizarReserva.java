@@ -25,8 +25,11 @@ public class PutActualizarReserva implements Interaction {
 
 
 
+
+
     public PutActualizarReserva(String baseUrl, String bodyRequest, String requestUri, String typeContent) {
         this.baseUrl = baseUrl;
+
         this.bodyRequest = bodyRequest;
         this.requestUri = requestUri;
         this.typeContent = typeContent;
@@ -49,15 +52,17 @@ public class PutActualizarReserva implements Interaction {
         actor.attemptsTo(
                 Put.to(requestUri)
                         .with(request -> request
+
                                 .contentType(typeContent)
                                 .body(bodyRequest)
                                 .relaxedHTTPSValidation())
+
         );
         log.info(MESSAGE_GENERAL);
         SerenityRest.lastResponse().body().prettyPrint();
 
     }
-    public static PutActualizarReserva params(String baseUrl, String bodyRequest, String requestUri, String typeContent ) {
+    public static PutActualizarReserva params(String baseUrl,  String bodyRequest, String requestUri, String typeContent ) {
         return Tasks.instrumented(PutActualizarReserva.class, baseUrl, bodyRequest, requestUri, typeContent);
     }
 }
