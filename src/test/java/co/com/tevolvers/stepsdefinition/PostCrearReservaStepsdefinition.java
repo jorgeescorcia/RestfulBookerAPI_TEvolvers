@@ -14,6 +14,7 @@ import static co.com.tevolvers.utils.Constantes.ENV_QA;
 import static io.restassured.http.ContentType.JSON;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.apache.http.HttpStatus.SC_CREATED;
 import static org.apache.http.HttpStatus.SC_OK;
 
 
@@ -31,12 +32,8 @@ public class PostCrearReservaStepsdefinition {
                 Call.service().
                         apiPost(
                                 BASE_URL.replace(TYPE_ENVIRONMENT, ENV_QA),
-                                "{\n" +
-                                        "    \"username\" : \"admin\",\n" +
-                                        "    \"password\" : \"password123\",\n" +
-                                        "}",
 
-                              /*  "'{\n" +
+                               "{\n" +
                                         "    \"firstname\" : \"Jim\",\n" +
                                         "    \"lastname\" : \"Brown\",\n" +
                                         "    \"totalprice\" : 111,\n" +
@@ -46,9 +43,9 @@ public class PostCrearReservaStepsdefinition {
                                         "        \"checkout\" : \"2019-01-01\"\n" +
                                         "    },\n" +
                                         "    \"additionalneeds\" : \"Breakfast\"\n" +
-                                        "}'",
+                                        "}",
 
-                               */
+
                                 Uri.CREATE_RESERVA.getUri(),
                                 String.valueOf(JSON))
 
@@ -57,6 +54,6 @@ public class PostCrearReservaStepsdefinition {
     }
     @Entonces("valida los datos consultados")
     public void valida_los_datos_consultados() {
-        theActorInTheSpotlight().should(seeThat(PostCrearReservaQuestion.registerSuccess(SC_OK)));
+        theActorInTheSpotlight().should(seeThat(PostCrearReservaQuestion.registerSuccess(SC_CREATED)));
     }
 }

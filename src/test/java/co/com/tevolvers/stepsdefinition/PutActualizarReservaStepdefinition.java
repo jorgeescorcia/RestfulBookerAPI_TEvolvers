@@ -25,9 +25,10 @@ public class PutActualizarReservaStepdefinition {
     public void configuraLaPeticionAObtener() {
         OnStage.theActorCalled(ACTOR).attemptsTo(
                 Call.service()
+
                         .apiPut(
                                 BASE_URL.replace(TYPE_ENVIRONMENT, ENV_QA),
-                                "'{\n" +
+                                "{\n" +
                                         "    \"firstname\" : \"James\",\n" +
                                         "    \"lastname\" : \"Brown\",\n" +
                                         "    \"totalprice\" : 111,\n" +
@@ -37,10 +38,13 @@ public class PutActualizarReservaStepdefinition {
                                         "        \"checkout\" : \"2019-01-01\"\n" +
                                         "    },\n" +
                                         "    \"additionalneeds\" : \"Breakfast\"\n" +
-                                        "}'",
+                                        "}",
                                 Uri.UPDATE_RESERVA.getUri(),
+
                                 String.valueOf(ContentType.JSON)
                         )
+
+
         );
     }
 

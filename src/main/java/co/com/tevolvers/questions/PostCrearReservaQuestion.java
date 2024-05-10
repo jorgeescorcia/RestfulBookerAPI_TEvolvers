@@ -8,6 +8,7 @@ import static co.com.tevolvers.utils.Constantes.RESPONSE_REQUEST;
 import static net.serenitybdd.screenplay.rest.questions.ResponseConsequence.seeThatResponse;
 import static org.hamcrest.Matchers.equalTo;
 
+
 public class PostCrearReservaQuestion implements Question<Boolean> {
 
     private int statusOK;
@@ -21,10 +22,7 @@ public class PostCrearReservaQuestion implements Question<Boolean> {
     public Boolean answeredBy(Actor actor) {
         actor.should(seeThatResponse(RESPONSE_REQUEST,
                 reponse -> reponse.statusCode(statusOK)
-
-                        .body("username", equalTo("admin"))
-                        .body("password", equalTo("password123"))
-                       /* .body("firstname", equalTo("Jim"))
+                        .body("firstname", equalTo("Jim"))
                         .body("lastname", equalTo("Brown"))
                         .body("totalprice", equalTo(111))
                         .body("depositpaid", equalTo(true))
@@ -32,7 +30,6 @@ public class PostCrearReservaQuestion implements Question<Boolean> {
                         .body("bookingdates.checkout", equalTo("2019-01-01"))
                         .body("additionalneeds", equalTo("Breakfast"))
 
-*/
             )
         );
 

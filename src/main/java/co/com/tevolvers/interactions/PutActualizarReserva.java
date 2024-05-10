@@ -1,5 +1,6 @@
 package co.com.tevolvers.interactions;
 
+import io.restassured.http.Header;
 import lombok.extern.slf4j.Slf4j;
 import net.serenitybdd.core.environment.EnvironmentSpecificConfiguration;
 import net.serenitybdd.rest.SerenityRest;
@@ -23,11 +24,13 @@ public class PutActualizarReserva implements Interaction {
 
 
 
+
     public PutActualizarReserva(String baseUrl, String bodyRequest, String requestUri, String typeContent) {
         this.baseUrl = baseUrl;
         this.bodyRequest = bodyRequest;
         this.requestUri = requestUri;
         this.typeContent = typeContent;
+
     }
 
 
@@ -54,7 +57,7 @@ public class PutActualizarReserva implements Interaction {
         SerenityRest.lastResponse().body().prettyPrint();
 
     }
-    public static PutActualizarReserva params(String baseUrl, String bodyRequest, String requestUri, String typeContent) {
+    public static PutActualizarReserva params(String baseUrl, String bodyRequest, String requestUri, String typeContent ) {
         return Tasks.instrumented(PutActualizarReserva.class, baseUrl, bodyRequest, requestUri, typeContent);
     }
 }

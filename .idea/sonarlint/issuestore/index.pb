@@ -6,26 +6,16 @@
 build.gradle,f\0\f07866736216be0ee2aba49e392191aeae700a35
 u
 Esrc/test/java/co/com/tevolvers/runners/ConsultaReservasGetRunner.java,3\c\3c0039ba01c3681abe80b37f360b856fad889161
-|
-Lsrc/test/java/co/com/tevolvers/stepsdefinition/ConsultaReservasGetSteps.java,8\e\8e7707ca3c5e2b71c3f26ae2a5c838506fd7207b
 k
 ;src/test/java/co/com/tevolvers/stepsdefinition/BaseUrl.java,6\c\6cf6be6883756734738588abfe23c0279683b026
 d
 4src/main/java/co/com/tevolvers/utils/Constantes.java,d\1\d1723a35f5714fd4ed978de3feec6e26b7b36184
 ]
 -src/main/java/co/com/tevolvers/utils/Uri.java,4\0\40bc98dd9f766880d21a157990355df9ef03b4b0
-^
-.src/main/java/co/com/tevolvers/utils/Uril.java,e\d\ed85b505e0a0b3577fa9f46bb123a58d7a8b7205
-|
-Lsrc/test/java/co/com/tevolvers/stepsdefinition/GetReservaStepdefinition.java,3\7\3747f35c1d9f08887a03f814595616d2ffbbe9e4
 †
 Vsrc/test/java/co/com/tevolvers/stepsdefinition/GetConsultaReservasStepsdefinition.java,e\b\eb4799c0514870cb743c7d313a2d5da7b07b9c55
 s
 Csrc/main/java/co/com/tevolvers/interactions/GetConsultaReserva.java,d\8\d8a5a78022806432e930804c649177242e1061c9
-l
-<src/main/java/co/com/tevolvers/task/GetConsulta_Reserva.java,8\6\86adadce85dc54448b43a3d9aef7e402107100c4
-]
--src/main/java/co/com/tevolvers/task/Call.java,c\9\c98512faa69cceb27e1080867b6a07d1114b04c3
 p
 @src/main/java/co/com/tevolvers/questions/GetReservaQuestion.java,6\5\65f9f30ea06dc1d56ffa6e7895100bbf1c404ab5
 ƒ
@@ -38,8 +28,6 @@ v
 Fsrc/main/java/co/com/tevolvers/questions/PostCrearReservaQuestion.java,9\b\9bcefae3da63d498bb7ff2f8d6b3babb2850da1b
 q
 Asrc/main/java/co/com/tevolvers/interactions/PostCrearReserva.java,e\e\ee14fc686b7c16b4980aa6337183c379a0b4fdd1
-r
-Bsrc/main/java/co/com/tevolvers/task/post/ConsumirServicioPost.java,5\2\52cbd50d7589f280be9f725c09ed34c5ac3c75b3
 v
 Fsrc/main/java/co/com/tevolvers/task/post/PostConsumirCrearReserva.java,5\a\5ac7d151ecbf91213f1c444596e25ccafc318101
 a
@@ -52,8 +40,6 @@ z
 Jsrc/main/java/co/com/tevolvers/questions/PutActualizarReservaQuestion.java,e\c\ec710e8139283d1ccca5a889b171bcc69730b59a
 a
 1src/main/java/co/com/tevolvers/task/put/Call.java,e\4\e47dd039dab79157b661f21b3c806abe4294d489
-n
->src/main/java/co/com/tevolvers/task/put/ConsumeServicoPut.java,4\a\4a6db3548330bae614c666b9a3c908965ae20927
 o
 ?src/main/java/co/com/tevolvers/task/put/ConsumeServicioPut.java,9\9\99b84d26d7ca628be70d7d2599ed9a0c67c089d1
 v

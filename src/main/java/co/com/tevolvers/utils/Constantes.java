@@ -13,4 +13,5 @@ public class Constantes {
     public static final String RESPONSE_REQUEST = "RESPONSE REQUEST: ";
     public static final String STATUS = "SERVICE STATUS";
     public static final String TYPE_ENVIRONMENT = "{env}";
+    public static final String HEADER = "Cookie : token=abc123";
 }
