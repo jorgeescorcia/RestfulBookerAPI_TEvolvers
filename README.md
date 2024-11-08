@@ -1,4 +1,5 @@
 # Automatizacion API Rest
+Link API: https://restful-booker.herokuapp.com/apidoc/index.html
 ## Funciones automatizadas: GET, POST, PUT
 
 ## Patron de Diseño Screenplay
