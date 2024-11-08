@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Consume PUT de la APi de reservas" skipped="0" tests="1" time="6.46" timestamp="2024-05-10 04:13:24"><testcase name="Actualiza(put) los datos que arroje el consumo de la api"/></testsuite>

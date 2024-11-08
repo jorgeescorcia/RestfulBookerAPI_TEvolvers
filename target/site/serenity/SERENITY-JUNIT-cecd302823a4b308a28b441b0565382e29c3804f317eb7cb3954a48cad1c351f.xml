@@ -1,1 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="0" name="Consume get de la APi de reservas" skipped="0" tests="1" time="5.55" timestamp="2024-05-10 04:32:53"><testcase name="Obtener(get) los datos que arroje el consumo de la api"/></testsuite>
