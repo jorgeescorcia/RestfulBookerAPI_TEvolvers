@@ -3,7 +3,7 @@ pipeline {
 
     tools {
         jdk 'JDK11'  // Ajusta a la versión de Java que uses
-        gradle 'Gradle_7'  // Ajusta a la versión de Gradle configurada en Jenkins
+        gradle 'Gradle_8'  // Ajusta a la versión de Gradle configurada en Jenkins
     }
 
     environment {
